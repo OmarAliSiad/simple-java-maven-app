@@ -3,13 +3,17 @@ pipeline {
     // options {
     //     skipStagesAfterUnstable()
     // }
-    stages {
+      stages {
         stage('Echo hello world') {
-           steps {
+            when {
+                branch 'master'
+            }
+    
+            steps {
                 echo 'hello world2'
-                }
-              } 
-           }
+            }
+        }
+    }
     //     stage('Build') {
     //         steps {
     //             sh 'mvn -B -DskipTests clean package'
