@@ -4,12 +4,12 @@ pipeline {
     //     skipStagesAfterUnstable()
     // }
     stages {
-        stage('Echo hello world'){
-            steps{
-            echo 'hello world'
-            }
-            }
-    }
+        stage('Echo hello world') {
+           steps {
+                echo 'hello world'
+                }
+              } 
+           }
     //     stage('Build') {
     //         steps {
     //             sh 'mvn -B -DskipTests clean package'
