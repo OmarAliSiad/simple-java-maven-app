@@ -10,7 +10,7 @@ pipeline {
             }
     
             steps {
-                echo 'hello world22asdasd2'
+                echo 'hello world'
             }
         }
     }
